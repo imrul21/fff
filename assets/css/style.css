@@ -1,0 +1,748 @@
+/* Table of contant
+=============================
+1) nav section
+2) Banner section
+3) About section
+4) Service section
+5) My work section
+6) Contact section
+7) footer section
+
+*/
+
+/* common css start  */
+:root {
+  --praimary-color: #ffffff;
+  --secoundry-color: #0c0c0c;
+  --third-color:#90953b;
+  --forth-color:#ffff00;
+  --praimary-font: "Open Sans", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+p,
+span,
+small {
+  margin: 0;
+  padding: 0;
+}
+ol,
+ul {
+  list-style-type: none;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+
+body {
+  font-family: var(--praimary-font);
+}
+
+
+/* common css end  */
+
+/* nav section css start  */
+#nav {
+  background: var(--third-color);
+}
+#nav .navbar-brand span{
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--praimary-color);
+  text-transform: uppercase; 
+}
+#nav #nav-menu ul li a {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--praimary-color);
+  text-transform: uppercase;
+  padding: 15px 20px;
+  
+}
+#nav #nav-menu ul li a:hover {
+
+  border-bottom: 2px solid var(--forth-color) ;
+  
+
+  
+
+}
+/* nav section css end  */
+#banner{
+  background-color: #738240;
+  height: 600px;
+  position: relative;
+}
+/* banner section start */
+
+
+#carousel{
+  position: absolute;
+ top: 150px;
+ left: 100px;
+ right: 100px;
+ bottom: 0px;
+}
+.carousel-indicators{
+  position: absolute;
+
+  top: 500px;
+ 
+ right: 700px;
+ 
+ transform: translate(-134%, -50%); 
+
+}
+.carousel-indicators [data-bs-target]{
+  width: 50px;
+  height: 20px;
+  border-radius: 100%;
+
+  background-color: var(--forth-color);
+}
+
+.carousel_item{
+  position: absolute;
+  top: 50%;
+  right: 30%;
+  transform: translate(-25%, -50%);
+  text-align: start;
+}
+.carousel_item h3{
+
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--forth-color);
+}
+.carousel_item h1{
+  margin-bottom: 40px;
+  font-size: 58px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--praimary-color);
+}
+.carousel_item p{
+  font-size: 20px;
+  text-transform: capitalize;
+ margin-bottom: 40px;
+  color: var(--praimary-color);
+}
+ .btn_box a{
+  margin-bottom: 40px;
+  padding: 15px 42px;
+  font-size: 15px;
+  margin: 0px 5px;
+  background-color: var(--praimary-color);
+  color: var(--secoundry-color);
+  text-transform: uppercase;
+ 
+}
+  .btn_box a:hover{
+  background-color: var(--forth-color);
+} 
+
+
+/* .carousel {
+  max-width: 95%;
+  margin-inline: auto;
+  padding-block: 1.875rem;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(-20%, -50%);
+  text-align: start;
+}
+
+.carousel-caption p {
+  max-width: 30rem;
+}
+
+.carousel-indicators button {
+  background-color: red;
+} */
+
+/* //banner section end */
+/* offer section start */
+#offer {
+ margin-top: 100px;
+}
+#offer .img{
+
+  width: 30%;
+  
+}
+#offer .img img{
+  width: 100%;
+  display: block;
+}
+#offer .offer_content_info{
+  width: 70%;
+
+  
+}
+#offer .offer_content h2{
+  
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 30px;
+   margin: 20px 0px;
+}
+#offer .offer_content p{
+  
+  font-size: 18px;
+}
+
+#offer .offer_content_info {
+  margin: 50px 30px;
+}
+
+#offer .offer_content_info h3{
+ 
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* //offer section end */
+
+
+/* about section start */
+#about{
+  background-color:var(--praimary-color);
+}
+#about .container .about_text h2{
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--secoundry-color);
+
+}
+#about .container .about_text p{
+
+  margin-top: 20px ;
+  width: 60%;
+  font-size: 15px;
+  margin-bottom: 50px ;
+  color: var(--secoundry-color);
+  text-transform: capitalize;
+}
+#about .container .about_text a{
+
+  padding: 10px 35px;
+  font-size: 15px;
+  margin: 0px 5px;
+  color: var(--secoundry-color);
+  background-color: var(--forth-color);
+  text-transform: uppercase;
+}
+
+
+/* //about section end */
+
+/* contract area start */
+.contact_section {
+  position: relative;
+  background-color: #90973b;
+  padding: 30px;
+}
+
+.contact_section h2 {
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+.contact_section h2 span {
+  color: #fefdfc;
+}
+
+.contact_section form {
+  padding-right: 35px;
+}
+
+.contact_section input {
+  width: 100%;
+  border: 0;
+  height: 50px;
+  border-radius: 25px;
+  margin-bottom: 25px;
+  padding-left: 25px;
+  background-color: #fefdfc;
+  outline: none;
+  color: #101010;
+}
+
+.contact_section input::-webkit-input-placeholder {
+  color: #131313;
+}
+
+.contact_section input:-ms-input-placeholder {
+  color: #131313;
+}
+
+.contact_section input::-ms-input-placeholder {
+  color: #131313;
+}
+
+.contact_section input::placeholder {
+  color: #131313;
+}
+
+.contact_section input.message-box {
+  height: 120px;
+}
+
+.contact_section button {
+  padding: 15px 55px;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  border: 1px solid #fa0909;
+  color: #fff;
+  font-weight: bold;
+  background-color: #fa0909;
+}
+
+.contact_section .map_section {
+  width: 100%;
+  height: 450px;
+}
+
+/* //contract area end */
+/* footer start */
+#footer{
+  background-color: #0c0c0c;
+  color: #ffffff;
+  padding: 50px 20px;
+  
+  
+}
+#footer .footer_top {
+  padding-top: 20px;
+}
+#footer .footer_top h2{
+  margin-left: 200px;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+#footer .footer_top .input{
+  
+ width: 480px;
+ 
+}
+
+#footer .footer_top button{
+  border: none;
+ position: absolute;
+ top: 0;
+ bottom: 0;
+ left: 380px;
+ padding: 0px 20px;
+ background-color:var(--forth-color);
+ border-radius: 15px;
+}
+
+#footer .footer_info {
+  padding-top: 20px;
+}
+
+
+#footer .footer_info span{
+  font-size: 25px;
+  
+  text-transform: uppercase;
+}
+
+#footer .footer_info p{
+  font-size: 18px;
+  padding: 15px 5px;
+  text-transform: capitalize;
+  margin-top: 10px;
+}
+#footer .footer_info h3{
+  font-size: 25px;
+  
+  text-transform: uppercase;
+}
+
+
+/* //footer end */
+
+/* 
+@media only screen and (max-width:767px){
+
+  #banner{
+    background-color: #738240;
+    height: 250px;
+  position: relative;
+   
+  }
+  
+#carousel {
+  
+  position: relative;
+  height: 200px;
+  bottom: 600px;
+}
+
+.carousel{
+  position: absolute;
+ top: 50px;
+ left: 50px;
+ right: 50px;
+ bottom: 50px;
+}
+.carousel-indicators{
+  position: absolute;
+
+  top:650px;
+ 
+ right:180px;
+ left: -60px;
+ 
+ transform: translate(-5%, 10%); 
+
+}
+.carousel-indicators [data-bs-target]{
+  width: 30px;
+  height: 15px;
+  border-radius: 100%;
+
+  background-color: var(--forth-color);
+}
+
+.carousel_item{
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(-15%, -50%);
+  text-align: start;
+}
+.carousel_item h3{
+
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--forth-color);
+}
+.carousel_item h1{
+  margin-bottom: 50px;
+  font-size: 44px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--praimary-color);
+}
+.carousel_item p{
+  font-size: 20px;
+  text-transform: capitalize;
+ margin-bottom: 50px;
+  color: var(--praimary-color);
+}
+ .btn_box a{
+  margin-bottom: 40px;
+  padding: 10px 22px;
+  font-size: 15px;
+  margin: 0px 5px;
+  background-color: var(--praimary-color);
+  color: var(--secoundry-color);
+  text-transform: uppercase;
+ 
+}
+  .btn_box a:hover{
+  background-color: var(--forth-color);
+} 
+} */
+
+
+
+
+/* extra extra large device */
+@media (min-width: 1400px) {
+
+  .carousel-indicators{
+  
+  
+    top: 510px;
+   
+   right: 700px;
+   
+   transform: translate(-105%, -50%); 
+  
+  }
+
+}
+
+
+/* extra large device */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+
+}
+
+
+/* large device */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #banner{
+    background-color: #738240;
+    height: 300px;
+  position: relative;
+   
+  }
+  
+  
+  .carousel{
+  position: absolute;
+  top: -60px;
+  left: 20px;
+  right: 20px;
+  bottom: -40px;
+  }
+  .carousel-indicators{
+  position: absolute;
+  
+  top:30px;
+  
+  right:450px;
+  left: -50px;
+  
+  transform: translate(-25%, 90%); 
+  
+  }
+  .carousel-indicators [data-bs-target]{
+  width: 30px;
+  height: 15px;
+  border-radius: 100%;
+  
+  background-color: var(--forth-color);
+  }
+  
+  .carousel_item{
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(-15%, -50%);
+  text-align: start;
+  }
+  .carousel_item h3{
+  
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--forth-color);
+  }
+  .carousel_item h1{
+  margin-bottom: 40px;
+  font-size: 44px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--praimary-color);
+  }
+  .carousel_item p{
+  font-size: 15px;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+  color: var(--praimary-color);
+  }
+  .btn_box a{
+  margin-bottom: px;
+  padding: 10px 22px;
+  font-size: 15px;
+  margin: 0px 5px;
+  background-color: var(--praimary-color);
+  color: var(--secoundry-color);
+  text-transform: uppercase;
+  
+  }
+  .btn_box a:hover{
+  background-color: var(--forth-color);
+  } 
+}
+
+
+/* medium device */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #banner{
+    background-color: #738240;
+    height: 300px;
+  position: relative;
+   
+  }
+  
+  
+  .carousel{
+   position: absolute;
+  top: -10px;
+  left: 0px;
+  right: 30px;
+  bottom: 0px; 
+
+  height: 300px;
+  width: 600px;
+
+ 
+ 
+  }
+  .carousel-indicators{
+  position: absolute;
+  
+  top: 150px;
+  bottom: 7px;
+  right:120px;
+  left: -60px;
+  
+  transform: translate(-25%, 100%); 
+  
+  }
+  .carousel-indicators [data-bs-target]{
+  width: 30px;
+  height: 15px;
+  border-radius: 100%;
+  
+  background-color: var(--forth-color);
+  }
+  
+  .carousel_item{
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(-15%, -45%);
+  text-align: start;
+ 
+  }
+  .carousel_item h3{
+  
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--forth-color);
+  }
+  .carousel_item h1{
+  margin-bottom: 20px;
+  font-size: 44px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--praimary-color);
+  }
+  .carousel_item p{
+  font-size: 15px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  color: var(--praimary-color);
+  }
+  .btn_box a{
+  margin-bottom: px;
+  padding: 9px 18px;
+  font-size: 15px;
+  margin: 0px 5px;
+  background-color: var(--praimary-color);
+  color: var(--secoundry-color);
+  text-transform: uppercase;
+  
+  }
+  .btn_box a:hover{
+  background-color: var(--forth-color);
+  } 
+
+
+}
+
+
+/* small device */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #banner{
+    background: none;
+    position: relative;
+   
+  }
+  
+  
+  .carousel{
+position: absolute;
+ left: -100px;
+
+width: 580px;
+  
+
+
+ 
+ 
+  }
+  .carousel-indicators{
+  position: absolute;
+  
+  top: 150px;
+  bottom: 7px;
+  right:120px;
+  left: -60px;
+  
+  transform: translate(-25%, 100%); 
+  
+  }
+  .carousel-indicators [data-bs-target]{
+  width: 30px;
+  height: 15px;
+  border-radius: 100%;
+  
+  background-color: var(--forth-color);
+  }
+  
+  .carousel_item{
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(-15%, -45%);
+  text-align: start;
+ 
+  }
+  .carousel_item h3{
+  
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--forth-color);
+  }
+  .carousel_item h1{
+  margin-bottom: 20px;
+  font-size: 44px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--praimary-color);
+  }
+  .carousel_item p{
+  font-size: 15px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  color: var(--praimary-color);
+  }
+  .btn_box a{
+  margin-bottom: px;
+  padding: 9px 18px;
+  font-size: 15px;
+  margin: 0px 5px;
+  background-color: var(--praimary-color);
+  color: var(--secoundry-color);
+  text-transform: uppercase;
+  
+  }
+  .btn_box a:hover{
+  background-color: var(--forth-color);
+  } 
+}
+
+
+
+/* extra small device */
+@media (max-width: 575.98) {
+ 
+}
+
+
